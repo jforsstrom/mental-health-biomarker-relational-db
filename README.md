@@ -51,3 +51,20 @@ FROM all_immuno a
 LEFT JOIN mental_dx m ON a.subject_id = m.subject_id
 GROUP BY mental_health_status, a.label
 ORDER BY label;
+```
+### Interpretation
+
+This query demonstrates cross-table cohort analysis by integrating diagnosis codes with laboratory biomarker measurements. Using Common Table Expressions (CTEs), it first identifies patients with relevant mental health diagnoses and then computes cohort-level averages for cortisol and immunoglobulin A.
+
+The structure reflects how the database supports scalable biomarker–diagnosis comparison and enables downstream statistical or predictive modeling workflows.
+
+## Data Governance & Administration
+
+This project also incorporates database administration considerations, including:
+
+- Role-based access control (DBA, ETL, analyst roles)
+- Data privacy and confidentiality training
+- Foreign key enforcement to prevent orphan records
+- Nightly backups using `mysqldump`
+- Planned Recovery Point Objective (RPO) and Recovery Time Objective (RTO)
+- Data auditing workflows for anomaly detection and integrity checks
