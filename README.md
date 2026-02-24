@@ -1,2 +1,2 @@
 # mental-health-biomarker-relational-db
-Clinical research SQL database for identifying biomarkers in mental health disorders
+This project implements a relational clinical research database in MySQL, integrating multimodal mental health data including patient demographics, admissions, laboratory biomarkers, diagnoses, survey assessments, and neuroimaging features. Built using a subset of MIMIC-IV data with supplementary schema extensions, the system enables structured querying of biomarker–diagnosis relationships and supports scalable analytical workflows in mental health research.
