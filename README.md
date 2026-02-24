@@ -52,7 +52,6 @@ LEFT JOIN mental_dx m ON a.subject_id = m.subject_id
 GROUP BY mental_health_status, a.label
 ORDER BY label;
 ```
-### Interpretation
 
 This query demonstrates cross-table cohort analysis by integrating diagnosis codes with laboratory biomarker measurements. Using Common Table Expressions (CTEs), it first identifies patients with relevant mental health diagnoses and then computes cohort-level averages for cortisol and immunoglobulin A.
 
