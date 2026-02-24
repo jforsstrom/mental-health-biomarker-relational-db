@@ -67,3 +67,13 @@ This project also incorporates database administration considerations, including
 - Nightly backups using `mysqldump`
 - Planned Recovery Point Objective (RPO) and Recovery Time Objective (RTO)
 - Data auditing workflows for anomaly detection and integrity checks
+
+## Tech Stack
+
+- MySQL Workbench
+- Advanced SQL
+- Relational schema design (3NF principles)
+- Primary & foreign key constraints
+- Common Table Expressions (CTEs)
+- Multi-table joins and aggregate analysis
+- MIMIC-IV clinical dataset (demo subset)
